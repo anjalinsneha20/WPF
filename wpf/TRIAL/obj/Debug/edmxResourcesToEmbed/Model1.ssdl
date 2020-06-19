@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmployeeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="SMAFI">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="BrokerCode" Type="nchar" MaxLength="10" />
+    <Property Name="BrokerName" Type="nchar" MaxLength="10" />
+    <Property Name="RTTMCode" Type="nchar" MaxLength="10" />
+    <Property Name="DTCNo" Type="nchar" MaxLength="10" />
+    <Property Name="Notes" Type="nchar" MaxLength="10" />
+    <Property Name="TradeType" Type="nchar" MaxLength="10" />
+    <Property Name="Name" Type="nchar" MaxLength="10" />
+    <Property Name="Phone" Type="varchar" MaxLength="50" />
+    <Property Name="Fax" Type="nchar" MaxLength="10" />
+    <Property Name="Email" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="EmployeeModelStoreContainer">
+    <EntitySet Name="SMAFI" EntityType="Self.SMAFI" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmployeeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="SMAFI">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="BrokerCode" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BrokerName" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="RTTMCode" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="DTCNo" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Notes" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="TradeType" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fax" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="EmployeeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SMAFIs" EntityType="Self.SMAFI" />
+  </EntityContainer>
+</Schema>

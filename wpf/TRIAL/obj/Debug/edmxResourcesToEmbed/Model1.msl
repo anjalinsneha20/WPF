@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EmployeeModelStoreContainer" CdmEntityContainer="EmployeeEntities">
+    <EntitySetMapping Name="SMAFIs">
+      <EntityTypeMapping TypeName="EmployeeModel.SMAFI">
+        <MappingFragment StoreEntitySet="SMAFI">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BrokerCode" ColumnName="BrokerCode" />
+          <ScalarProperty Name="BrokerName" ColumnName="BrokerName" />
+          <ScalarProperty Name="RTTMCode" ColumnName="RTTMCode" />
+          <ScalarProperty Name="DTCNo" ColumnName="DTCNo" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="TradeType" ColumnName="TradeType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
